@@ -1,0 +1,753 @@
+2023-09-29 17:11:27:222 [Appium] Welcome to Appium v2.1.3
+2023-09-29 17:11:27:225 [Appium] Non-default server args:
+2023-09-29 17:11:27:227 [Appium] { localTimezone: true }
+2023-09-29 17:11:27:227 [Appium] Attempting to load driver uiautomator2...
+2023-09-29 17:11:27:229 [Appium] Requiring driver at C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver
+2023-09-29 17:11:28:689 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+2023-09-29 17:11:28:693 [Appium] You can provide the following URLs in your client code to connect to this server:
+2023-09-29 17:11:28:694 [Appium] 	http://192.168.3.59:4723/
+2023-09-29 17:11:28:694 [Appium] 	http://127.0.0.1:4723/ (only accessible from the same host)
+2023-09-29 17:11:28:694 [Appium] Available drivers:
+2023-09-29 17:11:28:694 [Appium]   - uiautomator2@2.29.10 (automationName 'UiAutomator2')
+2023-09-29 17:11:28:695 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2023-09-29 17:11:28:962 [HTTP] --> GET /status
+2023-09-29 17:11:28:962 [HTTP] {}
+2023-09-29 17:11:28:964 [AppiumDriver@79f3] Calling AppiumDriver.getStatus() with args: []
+2023-09-29 17:11:28:966 [AppiumDriver@79f3] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.1.3"}}
+2023-09-29 17:11:28:973 [HTTP] <-- GET /status 200 8 ms - 110
+2023-09-29 17:11:28:973 [HTTP] 
+2023-09-29 17:11:30:796 [HTTP] Request idempotency key: 7a921fd6-0560-40aa-94c2-23a9b3950a69
+2023-09-29 17:11:30:813 [HTTP] --> POST /session
+2023-09-29 17:11:30:814 [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appium:appActivity":"flipboard.activities.LaunchActivityAlias","appium:appPackage":"flipboard.app","appium:automationName":"UiAutomator2","appium:deviceName":"Maryo","appium:hub":"http://127.0.0.1:4723/","appium:platformVersion":"13.0.0","platformName":"ANDROID"}}}
+2023-09-29 17:11:30:814 [AppiumDriver@79f3] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appium:appActivity":"flipboard.activities.LaunchActivityAlias","appium:appPackage":"flipboard.app","appium:automationName":"UiAutomator2","appium:deviceName":"Maryo","appium:hub":"http://127.0.0.1:4723/","appium:platformVersion":"13.0.0","platformName":"ANDROID"}}]
+2023-09-29 17:11:30:815 [AppiumDriver@79f3] Event 'newSessionRequested' logged at 1695982290815 (17:11:30 GMT+0700 (Western Indonesia Time))
+2023-09-29 17:11:30:819 [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+2023-09-29 17:11:30:819 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2023-09-29 17:11:30:819 [Appium] Will require it at C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver
+2023-09-29 17:11:30:819 [Appium] Requiring driver at C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver
+2023-09-29 17:11:30:819 [AppiumDriver@79f3] Appium v2.1.3 creating new AndroidUiautomator2Driver (v2.29.10) session
+2023-09-29 17:11:30:820 [AppiumDriver@79f3] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2023-09-29 17:11:30:820 [AppiumDriver@79f3] Appium's BaseDriver version is 9.3.20
+2023-09-29 17:11:30:820 [AppiumDriver@79f3] AndroidUiautomator2Driver's BaseDriver version is 9.3.20
+2023-09-29 17:11:30:822 [AndroidUiautomator2Driver@11e1] Creating session with W3C capabilities: {
+2023-09-29 17:11:30:822 [AndroidUiautomator2Driver@11e1]   "alwaysMatch": {
+2023-09-29 17:11:30:822 [AndroidUiautomator2Driver@11e1]     "platformName": "ANDROID",
+2023-09-29 17:11:30:822 [AndroidUiautomator2Driver@11e1]     "appium:app": "C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk",
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     "appium:appActivity": "flipboard.activities.LaunchActivityAlias",
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     "appium:appPackage": "flipboard.app",
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     "appium:automationName": "UiAutomator2",
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     "appium:deviceName": "Maryo",
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     "appium:hub": "http://127.0.0.1:4723/",
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     "appium:platformVersion": "13.0.0"
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]   },
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]   "firstMatch": [
+2023-09-29 17:11:30:823 [AndroidUiautomator2Driver@11e1]     {}
+2023-09-29 17:11:30:824 [AndroidUiautomator2Driver@11e1]   ]
+2023-09-29 17:11:30:824 [AndroidUiautomator2Driver@11e1] }
+2023-09-29 17:11:30:830 [AndroidUiautomator2Driver@11e1] The following capabilities were provided, but are not recognized by Appium:
+2023-09-29 17:11:30:830 [AndroidUiautomator2Driver@11e1]   deviceName
+2023-09-29 17:11:30:830 [AndroidUiautomator2Driver@11e1]   hub
+2023-09-29 17:11:30:830 [AndroidUiautomator2Driver@11e1 (658d456f)] Session created with session id: 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:11:30:833 [BaseDriver] Using local app 'C:\Users\1556\Documents\SerenityBDDFramework-Complete\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk'
+2023-09-29 17:11:30:870 [AndroidUiautomator2Driver@11e1 (658d456f)] Checking whether app is actually present
+2023-09-29 17:11:30:887 [ADB] Found 31 'build-tools' folders under 'C:\Users\1556\AppData\Local\Android\android-sdk' (newest first):
+2023-09-29 17:11:30:887 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\29.0.3
+2023-09-29 17:11:30:887 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\29.0.2
+2023-09-29 17:11:30:887 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\29.0.1
+2023-09-29 17:11:30:887 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\29.0.0
+2023-09-29 17:11:30:887 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\28.0.3
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\28.0.2
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\28.0.1
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\28.0.0
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\27.0.3
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\27.0.2
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\27.0.1
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\27.0.0
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\26.0.3
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\26.0.2
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\26.0.1
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\26.0.0
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\25.0.3
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\25.0.2
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\25.0.1
+2023-09-29 17:11:30:888 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\25.0.0
+2023-09-29 17:11:30:889 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\24.0.3
+2023-09-29 17:11:30:889 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\24.0.2
+2023-09-29 17:11:30:889 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\24.0.1
+2023-09-29 17:11:30:889 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\24.0.0
+2023-09-29 17:11:30:889 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\23.0.3
+2023-09-29 17:11:30:889 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\23.0.2
+2023-09-29 17:11:30:890 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\23.0.1
+2023-09-29 17:11:30:890 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\22.0.1
+2023-09-29 17:11:30:890 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\21.1.2
+2023-09-29 17:11:30:890 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\20.0.0
+2023-09-29 17:11:30:890 [ADB]     C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\19.1.0
+2023-09-29 17:11:30:891 [ADB] Using 'adb.exe' from 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe'
+2023-09-29 17:11:30:892 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-09-29 17:11:30:985 [AndroidDriver] Retrieving device list
+2023-09-29 17:11:30:985 [ADB] Trying to find connected Android devices
+2023-09-29 17:11:30:986 [ADB] Getting connected devices
+2023-09-29 17:11:31:061 [ADB] Connected devices: [{"udid":"SK5DMBEUOBU4LNAU","state":"device"}]
+2023-09-29 17:11:31:061 [AndroidDriver] Looking for a device with Android '13.0.0'
+2023-09-29 17:11:31:061 [ADB] Setting device id to SK5DMBEUOBU4LNAU
+2023-09-29 17:11:31:062 [ADB] Getting device platform version
+2023-09-29 17:11:31:062 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell getprop ro.build.version.release'
+2023-09-29 17:11:31:190 [ADB] Current device property 'ro.build.version.release': 13
+2023-09-29 17:11:31:191 [AndroidDriver] Using device: SK5DMBEUOBU4LNAU
+2023-09-29 17:11:31:193 [ADB] Using 'adb.exe' from 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe'
+2023-09-29 17:11:31:193 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-09-29 17:11:31:281 [ADB] Setting device id to SK5DMBEUOBU4LNAU
+2023-09-29 17:11:31:282 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell getprop ro.build.version.sdk'
+2023-09-29 17:11:31:391 [ADB] Current device property 'ro.build.version.sdk': 33
+2023-09-29 17:11:31:391 [ADB] Getting device platform version
+2023-09-29 17:11:31:392 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell getprop ro.build.version.release'
+2023-09-29 17:11:31:502 [ADB] Current device property 'ro.build.version.release': 13
+2023-09-29 17:11:31:503 [ADB] Device API level: 33
+2023-09-29 17:11:31:503 [AndroidUiautomator2Driver@11e1 (658d456f)] Relaxing hidden api policy
+2023-09-29 17:11:31:503 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2023-09-29 17:11:31:755 [AndroidDriver] Pushing settings apk to device...
+2023-09-29 17:11:31:756 [ADB] Getting package info for 'io.appium.settings'
+2023-09-29 17:11:31:757 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell dumpsys package io.appium.settings'
+2023-09-29 17:11:31:976 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.1.2' >= '5.1.2')
+2023-09-29 17:11:31:978 [ADB] There is no need to install/upgrade 'C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\io.appium.settings\apks\settings_apk-debug.apk'
+2023-09-29 17:11:31:978 [ADB] Getting IDs of all 'io.appium.settings' processes
+2023-09-29 17:11:31:978 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell 'pgrep --help; echo $?''
+2023-09-29 17:11:32:135 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2023-09-29 17:11:32:360 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2023-09-29 17:11:32:361 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell appops set io.appium.settings android:mock_location allow'
+2023-09-29 17:11:32:571 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell "[ -e '/data/local/tmp/mock_apps.json' ] && echo __PASS__"'
+2023-09-29 17:11:32:714 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell cat /data/local/tmp/mock_apps.json'
+2023-09-29 17:11:32:880 [Logcat] Starting logs capture with command: C:\\Users\\1556\\AppData\\Local\\Android\\android-sdk\\platform-tools\\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU logcat -v threadtime
+2023-09-29 17:11:33:094 [AndroidUiautomator2Driver@11e1 (658d456f)] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2023-09-29 17:11:33:097 [ADB] Forwarding system: 8200 to device: 6790
+2023-09-29 17:11:33:097 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU forward tcp:8200 tcp:6790'
+2023-09-29 17:11:33:230 [ADB] Checking app cert for C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.12.6.apk
+2023-09-29 17:11:33:230 [ADB] Checking app cert for C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+2023-09-29 17:11:33:267 [ADB] Using 'apksigner.jar' from 'C:\Users\1556\AppData\Local\Android\android-sdk\build-tools\29.0.3\lib\apksigner.jar'
+2023-09-29 17:11:33:270 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-17.0.2\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\1556\\AppData\\Local\\Android\\android-sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\1556\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk
+2023-09-29 17:11:33:418 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-17.0.2\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\1556\\AppData\\Local\\Android\\android-sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\1556\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v5.12.6.apk
+2023-09-29 17:11:33:755 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-09-29 17:11:33:756 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-09-29 17:11:33:756 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-09-29 17:11:33:756 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-09-29 17:11:33:756 [ADB] 
+2023-09-29 17:11:33:757 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2023-09-29 17:11:33:757 [ADB] 'C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2023-09-29 17:11:33:758 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2023-09-29 17:11:33:758 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell pm path io.appium.uiautomator2.server.test'
+2023-09-29 17:11:33:910 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2023-09-29 17:11:34:510 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-09-29 17:11:34:510 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-09-29 17:11:34:510 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-09-29 17:11:34:510 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-09-29 17:11:34:510 [ADB] 
+2023-09-29 17:11:34:511 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.12.6.apk'
+2023-09-29 17:11:34:511 [ADB] 'C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.12.6.apk' is signed with the default certificate
+2023-09-29 17:11:34:511 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2023-09-29 17:11:34:511 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell dumpsys package io.appium.uiautomator2.server'
+2023-09-29 17:11:35:141 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.12.6' >= '5.12.6')
+2023-09-29 17:11:35:142 [AndroidUiautomator2Driver@11e1 (658d456f)] Server packages status: [{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\1556\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v5.12.6.apk","appId":"io.appium.uiautomator2.server"},{"wasSigned":true,"installState":"sameVersionInstalled","appPath":"C:\\Users\\1556\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2023-09-29 17:11:35:143 [AndroidUiautomator2Driver@11e1 (658d456f)] Server packages are not going to be (re)installed
+2023-09-29 17:11:35:145 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 30000ms for services to be available
+2023-09-29 17:11:35:146 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell pm list instrumentation'
+2023-09-29 17:11:35:309 [AndroidUiautomator2Driver@11e1 (658d456f)] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2023-09-29 17:11:35:312 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2023-09-29 17:11:35:312 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2023-09-29 17:11:35:313 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2023-09-29 17:11:35:530 [ADB] Checking app cert for C:\Users\1556\Documents\SerenityBDDFramework-Complete\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk
+2023-09-29 17:11:35:571 [ADB] Starting apksigner: 'C:\\Program Files\\Java\\jdk-17.0.2\\bin\\java.exe' -Xmx1024M -Xss1m -jar C:\\Users\\1556\\AppData\\Local\\Android\\android-sdk\\build-tools\\29.0.3\\lib\\apksigner.jar verify --print-certs C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk
+2023-09-29 17:11:36:690 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2023-09-29 17:11:36:690 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2023-09-29 17:11:36:690 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2023-09-29 17:11:36:690 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2023-09-29 17:11:36:690 [ADB] 
+2023-09-29 17:11:36:691 [ADB] sha256 hash did match for 'flipboard.apk'
+2023-09-29 17:11:36:691 [ADB] 'C:\Users\1556\Documents\SerenityBDDFramework-Complete\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk' is signed with the default certificate
+2023-09-29 17:11:36:691 [ADB] Getting package info for 'flipboard.app'
+2023-09-29 17:11:36:692 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell dumpsys package flipboard.app'
+2023-09-29 17:11:36:880 [ADB] The version code of the installed 'flipboard.app' is greater than the application version code (5392 > 4893)
+2023-09-29 17:11:36:881 [ADB] There is no need to downgrade 'flipboard.app'
+2023-09-29 17:11:36:881 [AndroidDriver] Performing fast reset on 'flipboard.app'
+2023-09-29 17:11:36:881 [ADB] Getting install status for flipboard.app
+2023-09-29 17:11:36:882 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell pm path flipboard.app'
+2023-09-29 17:11:37:049 [ADB] 'flipboard.app' is installed
+2023-09-29 17:11:37:050 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell am force-stop flipboard.app'
+2023-09-29 17:11:37:287 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell pm clear flipboard.app'
+2023-09-29 17:11:37:591 [AndroidDriver] Performed fast reset on the installed 'flipboard.app' application (stop and clear)
+2023-09-29 17:11:37:591 [AndroidUiautomator2Driver@11e1 (658d456f)] Performing shallow cleanup of automation leftovers
+2023-09-29 17:11:37:611 [AndroidUiautomator2Driver@11e1 (658d456f)] No obsolete sessions have been detected (socket hang up)
+2023-09-29 17:11:37:612 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell am force-stop io.appium.uiautomator2.server.test'
+2023-09-29 17:11:37:787 [AndroidUiautomator2Driver@11e1 (658d456f)] Starting UIAutomator2 server 5.12.6
+2023-09-29 17:11:37:787 [AndroidUiautomator2Driver@11e1 (658d456f)] Using UIAutomator2 server from 'C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v5.12.6.apk' and test from 'C:\Users\1556\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+2023-09-29 17:11:37:788 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 30000ms for UiAutomator2 to be online...
+2023-09-29 17:11:37:788 [ADB] Creating ADB subprocess with args: ["-P","5037","-s","SK5DMBEUOBU4LNAU","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2023-09-29 17:11:37:889 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/status' to command name 'getStatus'
+2023-09-29 17:11:37:891 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2023-09-29 17:11:37:910 [AndroidUiautomator2Driver@11e1 (658d456f)] socket hang up
+2023-09-29 17:11:38:918 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/status' to command name 'getStatus'
+2023-09-29 17:11:38:919 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2023-09-29 17:11:38:928 [AndroidUiautomator2Driver@11e1 (658d456f)] socket hang up
+2023-09-29 17:11:39:285 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2023-09-29 17:11:39:939 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/status' to command name 'getStatus'
+2023-09-29 17:11:39:940 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2023-09-29 17:11:39:951 [AndroidUiautomator2Driver@11e1 (658d456f)] socket hang up
+2023-09-29 17:11:40:956 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/status' to command name 'getStatus'
+2023-09-29 17:11:40:956 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2023-09-29 17:11:41:066 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2023-09-29 17:11:41:067 [AndroidUiautomator2Driver@11e1 (658d456f)] The initialization of the instrumentation process took 3279ms
+2023-09-29 17:11:41:068 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session' to command name 'createSession'
+2023-09-29 17:11:41:068 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","automationName":"UiAutomator2","deviceName":"Maryo","hub":"http://127.0.0.1:4723/","platformVersion":"13.0.0"},"platformName":"ANDROID","app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","automationName":"UiAutomator2","deviceName":"SK5DMBEUOBU4LNAU","hub":"http://127.0.0.1:4723/","platformVersion":"13.0.0","deviceUDID":"SK5DMBEUOBU4LNAU"}],"alwaysMatch":{}}}
+2023-09-29 17:11:41:122 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","automationName":"UiAutomator2","deviceName":"Maryo","hub":"http://127.0.0.1:4723/","platformVersion":"13.0.0"},"platformName":"ANDROID","app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","automationName":"UiAutomator2","deviceName":"SK5DMBEUOBU4LNAU","hub":"http://127.0.0.1:4723/","platformVersion":"13.0.0","deviceUDID":"SK5D...
+2023-09-29 17:11:41:123 [AndroidUiautomator2Driver@11e1 (658d456f)] Determined the downstream protocol as 'W3C'
+2023-09-29 17:11:41:142 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/appium/device/info] with no body
+2023-09-29 17:11:41:187 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"androidId":"1624dce26b18879b","apiVersion":"33","bluetooth":{"state":"ON"},"brand":"Redmi","carrierName":"Telkomsel","displayDensity":440,"locale":"en_US","manufacturer":"Xiaomi","model":"2201116TG","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":4016707,"linkUpstreamBandwidthKbps":15000,"networkCapabilities":"NET_CAPABILITY_SUPL,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-2147483648,"transportTypes":"TRANSPORT_CELLULAR"},"detailedState":"CONNECTED","extraInfo":"internet","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":13,"subtypeName":"LTE","type":0,"typeName":"MOBILE"}],"platformVersion":"13","realDisplaySize":"1080x2400","timeZone":"Asia/Jakarta"}}
+2023-09-29 17:11:41:187 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell dumpsys window'
+2023-09-29 17:11:41:435 [AndroidDriver] Screen already unlocked, doing nothing
+2023-09-29 17:11:41:435 [AndroidUiautomator2Driver@11e1 (658d456f)] Starting 'flipboard.app/flipboard.activities.LaunchActivityAlias and waiting for 'flipboard.app/flipboard.activities.LaunchActivityAlias'
+2023-09-29 17:11:41:436 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell am start -W -n flipboard.app/flipboard.activities.LaunchActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2023-09-29 17:11:42:638 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/appium/device/pixel_ratio] with no body
+2023-09-29 17:11:42:651 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":2.75}
+2023-09-29 17:11:42:653 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2023-09-29 17:11:42:653 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/appium/device/system_bars] with no body
+2023-09-29 17:11:42:671 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"statusBar":93}}
+2023-09-29 17:11:42:672 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/window/current/size' to command name 'getWindowSize'
+2023-09-29 17:11:42:672 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/window/current/size] with no body
+2023-09-29 17:11:42:679 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"height":2307,"width":1080}}
+2023-09-29 17:11:42:680 [AppiumDriver@79f3] New AndroidUiautomator2Driver session created successfully, session 658d456f-f9b8-40d8-a4be-9c90fa92daf8 added to master session list
+2023-09-29 17:11:42:682 [AppiumDriver@79f3] Event 'newSessionStarted' logged at 1695982302682 (17:11:42 GMT+0700 (Western Indonesia Time))
+2023-09-29 17:11:42:682 [AndroidUiautomator2Driver@11e1 (658d456f)] Cached the protocol value 'W3C' for the new session 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:11:42:683 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","automationName":"UiAutomator2","deviceName":"Maryo","hub":"http://127.0.0.1:4723/","platformVersion":"13.0.0"},"platformName":"ANDROID","app":"C:\\Users\\1556\\Documents\\SerenityBDDFramework-Complete\\FlipBoardMobile//src/test/resources/apkFile/flipboard.apk","appActivity":"flipboard.activities.LaunchActivityAlias","appPackage":"flipboard.app","automationName":"UiAutomator2","deviceName":"SK5DMBEUOBU4LNAU","hub":"http://127.0.0.1:4723/","platformVersion":"13","deviceUDID":"SK5DMBEUOBU4LNAU","deviceApiLevel":33,"deviceScreenSize":"1080x2400","deviceScreenD...
+2023-09-29 17:11:42:685 [HTTP] <-- POST /session 200 11871 ms - 1250
+2023-09-29 17:11:42:685 [HTTP] 
+2023-09-29 17:11:43:129 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:43:129 [HTTP] {"implicit":2000}
+2023-09-29 17:11:43:133 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:134 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:43:134 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:43:135 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:43:136 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 7 ms - 14
+2023-09-29 17:11:43:137 [HTTP] 
+2023-09-29 17:11:43:144 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element
+2023-09-29 17:11:43:144 [HTTP] {"using":"id","value":"flipboard.app:id/icon_button_text"}
+2023-09-29 17:11:43:148 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/icon_button_text","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:149 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:43:150 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:43:152 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element' to command name 'findElement'
+2023-09-29 17:11:43:152 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element] with body: {"strategy":"id","selector":"flipboard.app:id/icon_button_text","context":"","multiple":false}
+2023-09-29 17:11:43:194 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"ELEMENT":"00000000-0000-0efb-ffff-ffff0000000a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efb-ffff-ffff0000000a"}}
+2023-09-29 17:11:43:195 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efb-ffff-ffff0000000a","ELEMENT":"00000000-0000-0efb-ffff-ffff0000000a"}
+2023-09-29 17:11:43:196 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element 200 51 ms - 137
+2023-09-29 17:11:43:196 [HTTP] 
+2023-09-29 17:11:43:202 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:43:202 [HTTP] {"implicit":2000}
+2023-09-29 17:11:43:204 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:205 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:43:205 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:43:206 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:43:209 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 5 ms - 14
+2023-09-29 17:11:43:209 [HTTP] 
+2023-09-29 17:11:43:218 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed
+2023-09-29 17:11:43:218 [HTTP] {}
+2023-09-29 17:11:43:222 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-0efb-ffff-ffff0000000a","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:223 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed' to command name 'getAttribute'
+2023-09-29 17:11:43:224 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] with no body
+2023-09-29 17:11:43:238 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:43:239 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementDisplayed() result: true
+2023-09-29 17:11:43:240 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed 200 22 ms - 14
+2023-09-29 17:11:43:240 [HTTP] 
+2023-09-29 17:11:43:245 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed
+2023-09-29 17:11:43:245 [HTTP] {}
+2023-09-29 17:11:43:248 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-0efb-ffff-ffff0000000a","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:249 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed' to command name 'getAttribute'
+2023-09-29 17:11:43:249 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] with no body
+2023-09-29 17:11:43:263 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:43:263 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementDisplayed() result: true
+2023-09-29 17:11:43:265 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed 200 19 ms - 14
+2023-09-29 17:11:43:265 [HTTP] 
+2023-09-29 17:11:43:274 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:43:275 [HTTP] {"implicit":2000}
+2023-09-29 17:11:43:276 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:277 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:43:277 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:43:277 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:43:279 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 4 ms - 14
+2023-09-29 17:11:43:279 [HTTP] 
+2023-09-29 17:11:43:286 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element
+2023-09-29 17:11:43:286 [HTTP] {"using":"id","value":"flipboard.app:id/icon_button_text"}
+2023-09-29 17:11:43:287 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/icon_button_text","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:287 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:43:287 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:43:288 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element' to command name 'findElement'
+2023-09-29 17:11:43:288 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element] with body: {"strategy":"id","selector":"flipboard.app:id/icon_button_text","context":"","multiple":false}
+2023-09-29 17:11:43:308 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"ELEMENT":"00000000-0000-0efb-ffff-ffff0000000a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efb-ffff-ffff0000000a"}}
+2023-09-29 17:11:43:309 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efb-ffff-ffff0000000a","ELEMENT":"00000000-0000-0efb-ffff-ffff0000000a"}
+2023-09-29 17:11:43:310 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element 200 24 ms - 137
+2023-09-29 17:11:43:311 [HTTP] 
+2023-09-29 17:11:43:320 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:43:320 [HTTP] {"implicit":2000}
+2023-09-29 17:11:43:321 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:322 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:43:322 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:43:323 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:43:325 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 5 ms - 14
+2023-09-29 17:11:43:325 [HTTP] 
+2023-09-29 17:11:43:331 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed
+2023-09-29 17:11:43:332 [HTTP] {}
+2023-09-29 17:11:43:333 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-0efb-ffff-ffff0000000a","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:334 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed' to command name 'getAttribute'
+2023-09-29 17:11:43:335 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] with no body
+2023-09-29 17:11:43:347 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:43:348 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementDisplayed() result: true
+2023-09-29 17:11:43:349 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed 200 17 ms - 14
+2023-09-29 17:11:43:349 [HTTP] 
+2023-09-29 17:11:43:354 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/enabled
+2023-09-29 17:11:43:355 [HTTP] {}
+2023-09-29 17:11:43:355 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementEnabled() with args: ["00000000-0000-0efb-ffff-ffff0000000a","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:356 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/enabled' to command name 'getAttribute'
+2023-09-29 17:11:43:356 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efb-ffff-ffff0000000a/attribute/enabled] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/enabled] with no body
+2023-09-29 17:11:43:369 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:43:369 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementEnabled() result: true
+2023-09-29 17:11:43:370 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/enabled 200 15 ms - 14
+2023-09-29 17:11:43:370 [HTTP] 
+2023-09-29 17:11:43:422 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot
+2023-09-29 17:11:43:422 [HTTP] {}
+2023-09-29 17:11:43:423 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.getScreenshot() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:43:423 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/screenshot' to command name 'getScreenshot'
+2023-09-29 17:11:43:424 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/screenshot] with no body
+2023-09-29 17:11:45:359 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/...
+2023-09-29 17:11:45:396 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/cn23bRs/f/6Vz2Gduo3EexxyvdicP6fTOW3Is/i5ZVlyjXa73ZimaRyPp9w3...
+2023-09-29 17:11:45:427 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot 200 2000 ms - 3487064
+2023-09-29 17:11:45:427 [HTTP] 
+2023-09-29 17:11:45:900 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source
+2023-09-29 17:11:45:900 [HTTP] {}
+2023-09-29 17:11:45:902 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:11:45:906 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source' to command name 'getPageSource'
+2023-09-29 17:11:45:907 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/source] with no body
+2023-09-29 17:11:46:022 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>\r\n<hierarchy index=\"0\" class=\"hierarchy\" rotation=\"0\" width=\"1080\" height=\"2307\">\r\n  <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.FrameLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n    <android.widget.LinearLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.LinearLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n      <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class...
+2023-09-29 17:11:46:023 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:11:46:024 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source 200 123 ms - 4958
+2023-09-29 17:11:46:024 [HTTP] 
+2023-09-29 17:11:46:139 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:46:139 [HTTP] {"implicit":2000}
+2023-09-29 17:11:46:140 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:46:140 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:46:140 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:46:141 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:46:142 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:11:46:142 [HTTP] 
+2023-09-29 17:11:46:147 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element
+2023-09-29 17:11:46:148 [HTTP] {"using":"id","value":"flipboard.app:id/icon_button_text"}
+2023-09-29 17:11:46:149 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/icon_button_text","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:46:150 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:46:150 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:46:151 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element' to command name 'findElement'
+2023-09-29 17:11:46:152 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element] with body: {"strategy":"id","selector":"flipboard.app:id/icon_button_text","context":"","multiple":false}
+2023-09-29 17:11:46:191 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"ELEMENT":"00000000-0000-0efb-ffff-ffff0000000a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efb-ffff-ffff0000000a"}}
+2023-09-29 17:11:46:192 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efb-ffff-ffff0000000a","ELEMENT":"00000000-0000-0efb-ffff-ffff0000000a"}
+2023-09-29 17:11:46:193 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element 200 45 ms - 137
+2023-09-29 17:11:46:193 [HTTP] 
+2023-09-29 17:11:46:199 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:46:199 [HTTP] {"implicit":2000}
+2023-09-29 17:11:46:200 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:46:200 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:46:200 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:46:201 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:46:202 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:11:46:202 [HTTP] 
+2023-09-29 17:11:46:207 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed
+2023-09-29 17:11:46:207 [HTTP] {}
+2023-09-29 17:11:46:208 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-0efb-ffff-ffff0000000a","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:46:210 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed' to command name 'getAttribute'
+2023-09-29 17:11:46:210 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efb-ffff-ffff0000000a/attribute/displayed] with no body
+2023-09-29 17:11:46:235 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:46:235 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementDisplayed() result: true
+2023-09-29 17:11:46:237 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/displayed 200 29 ms - 14
+2023-09-29 17:11:46:238 [HTTP] 
+2023-09-29 17:11:46:243 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/click
+2023-09-29 17:11:46:244 [HTTP] {"id":"00000000-0000-0efb-ffff-ffff0000000a"}
+2023-09-29 17:11:46:245 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.click() with args: ["00000000-0000-0efb-ffff-ffff0000000a","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:46:246 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efb-ffff-ffff0000000a/click' to command name 'click'
+2023-09-29 17:11:46:246 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element/00000000-0000-0efb-ffff-ffff0000000a/click] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efb-ffff-ffff0000000a/click] with body: {"element":"00000000-0000-0efb-ffff-ffff0000000a"}
+2023-09-29 17:11:46:300 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:11:46:300 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.click() result: null
+2023-09-29 17:11:46:302 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efb-ffff-ffff0000000a/click 200 58 ms - 14
+2023-09-29 17:11:46:302 [HTTP] 
+2023-09-29 17:11:46:314 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot
+2023-09-29 17:11:46:315 [HTTP] {}
+2023-09-29 17:11:46:315 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.getScreenshot() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:46:316 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/screenshot' to command name 'getScreenshot'
+2023-09-29 17:11:46:316 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/screenshot] with no body
+2023-09-29 17:11:48:347 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/...
+2023-09-29 17:11:48:366 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/cn23bRs/f/6Vz2Gduo3EexxyvdicP6fTOW3Is/i5ZVlyjXa73ZimaRyPp9w3...
+2023-09-29 17:11:48:397 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot 200 2077 ms - 3486920
+2023-09-29 17:11:48:398 [HTTP] 
+2023-09-29 17:11:48:636 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source
+2023-09-29 17:11:48:636 [HTTP] {}
+2023-09-29 17:11:48:637 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:11:48:642 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source' to command name 'getPageSource'
+2023-09-29 17:11:48:642 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/source] with no body
+2023-09-29 17:11:48:936 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>\r\n<hierarchy index=\"0\" class=\"hierarchy\" rotation=\"0\" width=\"1080\" height=\"2307\">\r\n  <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.FrameLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n    <android.widget.LinearLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.LinearLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n      <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class...
+2023-09-29 17:11:48:937 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:11:48:938 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source 200 302 ms - 24725
+2023-09-29 17:11:48:938 [HTTP] 
+2023-09-29 17:11:48:977 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:48:977 [HTTP] {"implicit":2000}
+2023-09-29 17:11:48:977 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:48:978 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:48:978 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:48:978 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:48:980 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:11:48:980 [HTTP] 
+2023-09-29 17:11:48:987 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements
+2023-09-29 17:11:48:987 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2023-09-29 17:11:48:988 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:48:988 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:48:988 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:48:989 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/elements' to command name 'findElements'
+2023-09-29 17:11:48:990 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2023-09-29 17:11:49:191 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":[{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000002e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000002e"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000030","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000030"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000032","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000032"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000036","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000036"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000038","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000038"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000003a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003a"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000003e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003e"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000040","element-6066-...
+2023-09-29 17:11:49:192 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000002e","ELEMENT":"00000000-0000-0efc-ffff-ffff0000002e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000030","ELEMENT":"00000000-0000-0efc-ffff-ffff00000030"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000032","ELEMENT":"00000000-0000-0efc-ffff-ffff00000032"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000036","ELEMENT":"00000000-0000-0efc-ffff-ffff00000036"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000038","ELEMENT":"00000000-0000-0efc-ffff-ffff00000038"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003a","ELEMENT":"00000000-0000-0efc-ffff-ffff0000003a"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003e","ELEMENT":"00000000-0000-0efc-ffff-ffff0000003e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000040","ELEMENT":"00000000-0000-0efc-ffff-ffff0000004...
+2023-09-29 17:11:49:194 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements 200 206 ms - 3211
+2023-09-29 17:11:49:195 [HTTP] 
+2023-09-29 17:11:49:203 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:49:204 [HTTP] {"implicit":2000}
+2023-09-29 17:11:49:204 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:49:205 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:49:205 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:49:205 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:49:206 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:11:49:207 [HTTP] 
+2023-09-29 17:11:49:216 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff0000002e/click
+2023-09-29 17:11:49:216 [HTTP] {"id":"00000000-0000-0efc-ffff-ffff0000002e"}
+2023-09-29 17:11:49:217 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.click() with args: ["00000000-0000-0efc-ffff-ffff0000002e","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:49:218 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efc-ffff-ffff0000002e/click' to command name 'click'
+2023-09-29 17:11:49:218 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element/00000000-0000-0efc-ffff-ffff0000002e/click] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efc-ffff-ffff0000002e/click] with body: {"element":"00000000-0000-0efc-ffff-ffff0000002e"}
+2023-09-29 17:11:49:268 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:11:49:268 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.click() result: null
+2023-09-29 17:11:49:270 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff0000002e/click 200 53 ms - 14
+2023-09-29 17:11:49:270 [HTTP] 
+2023-09-29 17:11:49:278 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:49:278 [HTTP] {"implicit":2000}
+2023-09-29 17:11:49:278 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:49:279 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:49:279 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:49:279 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:49:280 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:11:49:280 [HTTP] 
+2023-09-29 17:11:49:286 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements
+2023-09-29 17:11:49:286 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2023-09-29 17:11:49:287 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:49:287 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:49:287 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:49:288 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/elements' to command name 'findElements'
+2023-09-29 17:11:49:288 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2023-09-29 17:11:50:032 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":[{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000002e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000002e"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000030","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000030"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000032","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000032"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000036","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000036"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000038","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000038"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000003a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003a"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000003e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003e"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000040","element-6066-...
+2023-09-29 17:11:50:032 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000002e","ELEMENT":"00000000-0000-0efc-ffff-ffff0000002e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000030","ELEMENT":"00000000-0000-0efc-ffff-ffff00000030"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000032","ELEMENT":"00000000-0000-0efc-ffff-ffff00000032"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000036","ELEMENT":"00000000-0000-0efc-ffff-ffff00000036"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000038","ELEMENT":"00000000-0000-0efc-ffff-ffff00000038"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003a","ELEMENT":"00000000-0000-0efc-ffff-ffff0000003a"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003e","ELEMENT":"00000000-0000-0efc-ffff-ffff0000003e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000040","ELEMENT":"00000000-0000-0efc-ffff-ffff0000004...
+2023-09-29 17:11:50:033 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements 200 747 ms - 3211
+2023-09-29 17:11:50:034 [HTTP] 
+2023-09-29 17:11:50:041 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:50:041 [HTTP] {"implicit":2000}
+2023-09-29 17:11:50:042 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:043 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:50:043 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:50:043 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:50:045 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 4 ms - 14
+2023-09-29 17:11:50:045 [HTTP] 
+2023-09-29 17:11:50:050 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000030/click
+2023-09-29 17:11:50:051 [HTTP] {"id":"00000000-0000-0efc-ffff-ffff00000030"}
+2023-09-29 17:11:50:051 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.click() with args: ["00000000-0000-0efc-ffff-ffff00000030","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:052 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efc-ffff-ffff00000030/click' to command name 'click'
+2023-09-29 17:11:50:052 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element/00000000-0000-0efc-ffff-ffff00000030/click] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efc-ffff-ffff00000030/click] with body: {"element":"00000000-0000-0efc-ffff-ffff00000030"}
+2023-09-29 17:11:50:104 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:11:50:105 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.click() result: null
+2023-09-29 17:11:50:107 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000030/click 200 56 ms - 14
+2023-09-29 17:11:50:107 [HTTP] 
+2023-09-29 17:11:50:114 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:50:114 [HTTP] {"implicit":2000}
+2023-09-29 17:11:50:115 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:115 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:50:115 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:50:116 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:50:117 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:11:50:117 [HTTP] 
+2023-09-29 17:11:50:122 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements
+2023-09-29 17:11:50:123 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_topic_row_topic_tag"}
+2023-09-29 17:11:50:124 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/topic_picker_topic_row_topic_tag","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:124 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:50:124 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:50:125 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/elements' to command name 'findElements'
+2023-09-29 17:11:50:125 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/elements] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_topic_row_topic_tag","context":"","multiple":true}
+2023-09-29 17:11:50:791 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":[{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000002e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000002e"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000030","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000030"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000032","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000032"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000036","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000036"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000038","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000038"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000003a","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003a"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff0000003e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003e"},{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000040","element-6066-...
+2023-09-29 17:11:50:792 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000002e","ELEMENT":"00000000-0000-0efc-ffff-ffff0000002e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000030","ELEMENT":"00000000-0000-0efc-ffff-ffff00000030"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000032","ELEMENT":"00000000-0000-0efc-ffff-ffff00000032"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000036","ELEMENT":"00000000-0000-0efc-ffff-ffff00000036"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000038","ELEMENT":"00000000-0000-0efc-ffff-ffff00000038"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003a","ELEMENT":"00000000-0000-0efc-ffff-ffff0000003a"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff0000003e","ELEMENT":"00000000-0000-0efc-ffff-ffff0000003e"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000040","ELEMENT":"00000000-0000-0efc-ffff-ffff0000004...
+2023-09-29 17:11:50:793 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements 200 671 ms - 3211
+2023-09-29 17:11:50:793 [HTTP] 
+2023-09-29 17:11:50:801 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:50:801 [HTTP] {"implicit":2000}
+2023-09-29 17:11:50:802 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:802 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:50:802 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:50:803 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:50:804 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:11:50:804 [HTTP] 
+2023-09-29 17:11:50:810 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000032/click
+2023-09-29 17:11:50:810 [HTTP] {"id":"00000000-0000-0efc-ffff-ffff00000032"}
+2023-09-29 17:11:50:811 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.click() with args: ["00000000-0000-0efc-ffff-ffff00000032","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:812 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efc-ffff-ffff00000032/click' to command name 'click'
+2023-09-29 17:11:50:813 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element/00000000-0000-0efc-ffff-ffff00000032/click] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efc-ffff-ffff00000032/click] with body: {"element":"00000000-0000-0efc-ffff-ffff00000032"}
+2023-09-29 17:11:50:869 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:11:50:869 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.click() result: null
+2023-09-29 17:11:50:871 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000032/click 200 60 ms - 14
+2023-09-29 17:11:50:871 [HTTP] 
+2023-09-29 17:11:50:883 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot
+2023-09-29 17:11:50:884 [HTTP] {}
+2023-09-29 17:11:50:884 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.getScreenshot() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:50:885 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/screenshot' to command name 'getScreenshot'
+2023-09-29 17:11:50:885 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/screenshot] with no body
+2023-09-29 17:11:53:395 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/...
+2023-09-29 17:11:53:417 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/cn23bRs/f/6Vz2Gduo3EexxyvdicP6fTOW3Is/i5ZVlyjXa73ZimaRyPp9w3...
+2023-09-29 17:11:53:451 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot 200 2561 ms - 3635840
+2023-09-29 17:11:53:452 [HTTP] 
+2023-09-29 17:11:53:669 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source
+2023-09-29 17:11:53:669 [HTTP] {}
+2023-09-29 17:11:53:671 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:11:53:675 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source' to command name 'getPageSource'
+2023-09-29 17:11:53:676 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/source] with no body
+2023-09-29 17:11:54:034 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>\r\n<hierarchy index=\"0\" class=\"hierarchy\" rotation=\"0\" width=\"1080\" height=\"2307\">\r\n  <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.FrameLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n    <android.widget.LinearLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.LinearLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n      <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class...
+2023-09-29 17:11:54:034 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:11:54:036 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source 200 367 ms - 24700
+2023-09-29 17:11:54:036 [HTTP] 
+2023-09-29 17:11:54:058 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:54:058 [HTTP] {"implicit":2000}
+2023-09-29 17:11:54:058 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:54:059 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:54:059 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:54:059 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:54:060 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:11:54:060 [HTTP] 
+2023-09-29 17:11:54:067 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element
+2023-09-29 17:11:54:068 [HTTP] {"using":"id","value":"flipboard.app:id/topic_picker_continue_button"}
+2023-09-29 17:11:54:069 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/topic_picker_continue_button","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:54:070 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:54:070 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:54:072 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element' to command name 'findElement'
+2023-09-29 17:11:54:073 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element] with body: {"strategy":"id","selector":"flipboard.app:id/topic_picker_continue_button","context":"","multiple":false}
+2023-09-29 17:11:54:228 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"ELEMENT":"00000000-0000-0efc-ffff-ffff00000021","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000021"}}
+2023-09-29 17:11:54:229 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efc-ffff-ffff00000021","ELEMENT":"00000000-0000-0efc-ffff-ffff00000021"}
+2023-09-29 17:11:54:229 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element 200 162 ms - 137
+2023-09-29 17:11:54:230 [HTTP] 
+2023-09-29 17:11:54:235 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:54:235 [HTTP] {"implicit":2000}
+2023-09-29 17:11:54:235 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:54:236 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:54:236 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:54:236 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:54:237 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:11:54:237 [HTTP] 
+2023-09-29 17:11:54:241 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000021/displayed
+2023-09-29 17:11:54:241 [HTTP] {}
+2023-09-29 17:11:54:242 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-0efc-ffff-ffff00000021","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:54:244 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efc-ffff-ffff00000021/attribute/displayed' to command name 'getAttribute'
+2023-09-29 17:11:54:244 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efc-ffff-ffff00000021/attribute/displayed] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efc-ffff-ffff00000021/attribute/displayed] with no body
+2023-09-29 17:11:54:264 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:54:265 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementDisplayed() result: true
+2023-09-29 17:11:54:266 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000021/displayed 200 24 ms - 14
+2023-09-29 17:11:54:266 [HTTP] 
+2023-09-29 17:11:54:270 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000021/click
+2023-09-29 17:11:54:271 [HTTP] {"id":"00000000-0000-0efc-ffff-ffff00000021"}
+2023-09-29 17:11:54:271 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.click() with args: ["00000000-0000-0efc-ffff-ffff00000021","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:54:272 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efc-ffff-ffff00000021/click' to command name 'click'
+2023-09-29 17:11:54:272 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element/00000000-0000-0efc-ffff-ffff00000021/click] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efc-ffff-ffff00000021/click] with body: {"element":"00000000-0000-0efc-ffff-ffff00000021"}
+2023-09-29 17:11:54:320 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:11:54:320 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.click() result: null
+2023-09-29 17:11:54:321 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efc-ffff-ffff00000021/click 200 50 ms - 14
+2023-09-29 17:11:54:321 [HTTP] 
+2023-09-29 17:11:54:332 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot
+2023-09-29 17:11:54:332 [HTTP] {}
+2023-09-29 17:11:54:332 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.getScreenshot() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:54:333 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/screenshot' to command name 'getScreenshot'
+2023-09-29 17:11:54:333 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/screenshot] with no body
+2023-09-29 17:11:56:628 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/...
+2023-09-29 17:11:56:648 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/cn23bRs/f/6Vz2Gduo3EexxyvdicP6fTOW3Is/i5ZVlyjXa73ZimaRyPp9w3...
+2023-09-29 17:11:56:682 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot 200 2345 ms - 3672168
+2023-09-29 17:11:56:683 [HTTP] 
+2023-09-29 17:11:56:907 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source
+2023-09-29 17:11:56:907 [HTTP] {}
+2023-09-29 17:11:56:908 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:11:56:912 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source' to command name 'getPageSource'
+2023-09-29 17:11:56:912 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/source] with no body
+2023-09-29 17:11:57:081 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>\r\n<hierarchy index=\"0\" class=\"hierarchy\" rotation=\"0\" width=\"1080\" height=\"2307\">\r\n  <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.FrameLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n    <android.widget.LinearLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.LinearLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n      <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class...
+2023-09-29 17:11:57:081 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:11:57:083 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source 200 176 ms - 9646
+2023-09-29 17:11:57:083 [HTTP] 
+2023-09-29 17:11:57:108 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:57:108 [HTTP] {"implicit":2000}
+2023-09-29 17:11:57:109 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:57:109 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:57:109 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:57:110 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:57:111 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:11:57:111 [HTTP] 
+2023-09-29 17:11:57:120 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element
+2023-09-29 17:11:57:120 [HTTP] {"using":"id","value":"flipboard.app:id/icon_button_text"}
+2023-09-29 17:11:57:121 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElement() with args: ["id","flipboard.app:id/icon_button_text","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:57:122 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:11:57:122 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:11:57:123 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element' to command name 'findElement'
+2023-09-29 17:11:57:124 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element] with body: {"strategy":"id","selector":"flipboard.app:id/icon_button_text","context":"","multiple":false}
+2023-09-29 17:11:57:165 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":{"ELEMENT":"00000000-0000-0efd-ffff-ffff0000009e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efd-ffff-ffff0000009e"}}
+2023-09-29 17:11:57:166 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0efd-ffff-ffff0000009e","ELEMENT":"00000000-0000-0efd-ffff-ffff0000009e"}
+2023-09-29 17:11:57:168 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element 200 47 ms - 137
+2023-09-29 17:11:57:169 [HTTP] 
+2023-09-29 17:11:57:174 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:11:57:174 [HTTP] {"implicit":2000}
+2023-09-29 17:11:57:174 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:57:174 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:11:57:175 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:11:57:175 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:11:57:176 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:11:57:176 [HTTP] 
+2023-09-29 17:11:57:182 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efd-ffff-ffff0000009e/displayed
+2023-09-29 17:11:57:182 [HTTP] {}
+2023-09-29 17:11:57:182 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-0efd-ffff-ffff0000009e","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:57:185 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efd-ffff-ffff0000009e/attribute/displayed' to command name 'getAttribute'
+2023-09-29 17:11:57:185 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /element/00000000-0000-0efd-ffff-ffff0000009e/attribute/displayed] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efd-ffff-ffff0000009e/attribute/displayed] with no body
+2023-09-29 17:11:57:208 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"true"}
+2023-09-29 17:11:57:209 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.elementDisplayed() result: true
+2023-09-29 17:11:57:210 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efd-ffff-ffff0000009e/displayed 200 28 ms - 14
+2023-09-29 17:11:57:210 [HTTP] 
+2023-09-29 17:11:57:214 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efd-ffff-ffff0000009e/click
+2023-09-29 17:11:57:214 [HTTP] {"id":"00000000-0000-0efd-ffff-ffff0000009e"}
+2023-09-29 17:11:57:215 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.click() with args: ["00000000-0000-0efd-ffff-ffff0000009e","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:57:216 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/element/00000000-0000-0efd-ffff-ffff0000009e/click' to command name 'click'
+2023-09-29 17:11:57:216 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /element/00000000-0000-0efd-ffff-ffff0000009e/click] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0efd-ffff-ffff0000009e/click] with body: {"element":"00000000-0000-0efd-ffff-ffff0000009e"}
+2023-09-29 17:11:57:268 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:11:57:269 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.click() result: null
+2023-09-29 17:11:57:270 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0efd-ffff-ffff0000009e/click 200 56 ms - 14
+2023-09-29 17:11:57:271 [HTTP] 
+2023-09-29 17:11:57:283 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot
+2023-09-29 17:11:57:283 [HTTP] {}
+2023-09-29 17:11:57:283 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.getScreenshot() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:11:57:284 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/screenshot' to command name 'getScreenshot'
+2023-09-29 17:11:57:284 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/screenshot] with no body
+2023-09-29 17:11:59:299 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/...
+2023-09-29 17:11:59:319 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/cn23bRs/f/6Vz2Gduo3EexxyvdicP6fTOW3Is/i5ZVlyjXa73ZimaRyPp9w3...
+2023-09-29 17:11:59:355 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot 200 2066 ms - 3545536
+2023-09-29 17:11:59:355 [HTTP] 
+2023-09-29 17:11:59:537 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source
+2023-09-29 17:11:59:538 [HTTP] {}
+2023-09-29 17:11:59:538 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:11:59:539 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source' to command name 'getPageSource'
+2023-09-29 17:11:59:539 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/source] with no body
+2023-09-29 17:12:01:992 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>\r\n<hierarchy index=\"0\" class=\"hierarchy\" rotation=\"0\" width=\"1080\" height=\"2307\">\r\n  <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.FrameLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n    <android.widget.LinearLayout index=\"0\" package=\"flipboard.app\" class=\"android.widget.LinearLayout\" text=\"\" checkable=\"false\" checked=\"false\" clickable=\"false\" enabled=\"true\" focusable=\"false\" focused=\"false\" long-clickable=\"false\" password=\"false\" scrollable=\"false\" selected=\"false\" bounds=\"[0,0][1080,2307]\" displayed=\"true\">\r\n      <android.widget.FrameLayout index=\"0\" package=\"flipboard.app\" class...
+2023-09-29 17:12:01:993 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:12:01:996 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/source 200 2457 ms - 86522
+2023-09-29 17:12:01:996 [HTTP] 
+2023-09-29 17:12:02:101 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:12:02:101 [HTTP] {"implicit":2000}
+2023-09-29 17:12:02:102 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:02:102 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:12:02:103 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:12:02:103 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:12:02:104 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:12:02:104 [HTTP] 
+2023-09-29 17:12:02:110 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements
+2023-09-29 17:12:02:110 [HTTP] {"using":"id","value":"flipboard.app:id/sliding_title_text_view"}
+2023-09-29 17:12:02:110 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/sliding_title_text_view","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:02:110 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:12:02:111 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:12:02:111 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/elements' to command name 'findElements'
+2023-09-29 17:12:02:111 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/elements] with body: {"strategy":"id","selector":"flipboard.app:id/sliding_title_text_view","context":"","multiple":true}
+2023-09-29 17:12:03:350 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":[{"ELEMENT":"00000000-0000-0eff-ffff-ffff0000013d","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013d"},{"ELEMENT":"00000000-0000-0eff-ffff-ffff0000013e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013e"}]}
+2023-09-29 17:12:03:351 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013d","ELEMENT":"00000000-0000-0eff-ffff-ffff0000013d"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013e","ELEMENT":"00000000-0000-0eff-ffff-ffff0000013e"}]
+2023-09-29 17:12:03:352 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements 200 1242 ms - 267
+2023-09-29 17:12:03:352 [HTTP] 
+2023-09-29 17:12:03:357 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:12:03:357 [HTTP] {"implicit":2000}
+2023-09-29 17:12:03:358 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:03:358 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:12:03:359 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:12:03:359 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:12:03:360 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:12:03:361 [HTTP] 
+2023-09-29 17:12:03:365 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text
+2023-09-29 17:12:03:366 [HTTP] {}
+2023-09-29 17:12:03:366 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:12:03:367 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text' to command name 'getText'
+2023-09-29 17:12:03:368 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0eff-ffff-ffff0000013d/text] with no body
+2023-09-29 17:12:03:382 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"FOR YOU"}
+2023-09-29 17:12:03:382 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:12:03:383 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text 200 18 ms - 70
+2023-09-29 17:12:03:384 [HTTP] 
+2023-09-29 17:12:03:390 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:12:03:390 [HTTP] {"implicit":2000}
+2023-09-29 17:12:03:390 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:03:391 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:12:03:391 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:12:03:392 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:12:03:393 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 3 ms - 14
+2023-09-29 17:12:03:393 [HTTP] 
+2023-09-29 17:12:03:399 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements
+2023-09-29 17:12:03:399 [HTTP] {"using":"id","value":"flipboard.app:id/sliding_title_text_view"}
+2023-09-29 17:12:03:399 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.findElements() with args: ["id","flipboard.app:id/sliding_title_text_view","658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:03:400 [AndroidUiautomator2Driver@11e1 (658d456f)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2023-09-29 17:12:03:400 [AndroidUiautomator2Driver@11e1 (658d456f)] Waiting up to 2000 ms for condition
+2023-09-29 17:12:03:401 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/elements' to command name 'findElements'
+2023-09-29 17:12:03:401 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/elements] with body: {"strategy":"id","selector":"flipboard.app:id/sliding_title_text_view","context":"","multiple":true}
+2023-09-29 17:12:03:592 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":[{"ELEMENT":"00000000-0000-0eff-ffff-ffff0000013d","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013d"},{"ELEMENT":"00000000-0000-0eff-ffff-ffff0000013e","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013e"}]}
+2023-09-29 17:12:03:592 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013d","ELEMENT":"00000000-0000-0eff-ffff-ffff0000013d"},{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0eff-ffff-ffff0000013e","ELEMENT":"00000000-0000-0eff-ffff-ffff0000013e"}]
+2023-09-29 17:12:03:593 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/elements 200 194 ms - 267
+2023-09-29 17:12:03:593 [HTTP] 
+2023-09-29 17:12:03:597 [HTTP] --> POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts
+2023-09-29 17:12:03:598 [HTTP] {"implicit":2000}
+2023-09-29 17:12:03:598 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,2000,"658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:03:598 [AndroidUiautomator2Driver@11e1 (658d456f)] W3C timeout argument: {"implicit":2000}}
+2023-09-29 17:12:03:599 [AndroidUiautomator2Driver@11e1 (658d456f)] Set implicit wait to 2000ms
+2023-09-29 17:12:03:599 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.timeouts() result: null
+2023-09-29 17:12:03:600 [HTTP] <-- POST /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/timeouts 200 2 ms - 14
+2023-09-29 17:12:03:600 [HTTP] 
+2023-09-29 17:12:03:606 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text
+2023-09-29 17:12:03:606 [HTTP] {}
+2023-09-29 17:12:03:606 [AndroidUiautomator2Driver@11e1 (658d456f)] Driver proxy active, passing request on via HTTP proxy
+2023-09-29 17:12:03:607 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text' to command name 'getText'
+2023-09-29 17:12:03:607 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/element/00000000-0000-0eff-ffff-ffff0000013d/text] with no body
+2023-09-29 17:12:03:621 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"FOR YOU"}
+2023-09-29 17:12:03:621 [AndroidUiautomator2Driver@11e1 (658d456f)] Replacing sessionId 0b3b5532-ae1a-439a-ac89-d096e473b1a6 with 658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:12:03:623 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/element/00000000-0000-0eff-ffff-ffff0000013d/text 200 16 ms - 70
+2023-09-29 17:12:03:623 [HTTP] 
+2023-09-29 17:12:03:638 [HTTP] --> GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot
+2023-09-29 17:12:03:638 [HTTP] {}
+2023-09-29 17:12:03:639 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.getScreenshot() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:03:639 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/screenshot' to command name 'getScreenshot'
+2023-09-29 17:12:03:639 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6/screenshot] with no body
+2023-09-29 17:12:06:226 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":"iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/...
+2023-09-29 17:12:06:255 [AndroidUiautomator2Driver@11e1 (658d456f)] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAlgCAYAAABtGofVAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHicbN3rltxIbi3gIJnXktrTtsfnefXOrSrllTw/kB+ALFtrzZpudVUmGYEANjY2ENO///3vbbfbjTHGOByO43q9jN1uPy6XP+NwOI7dbjeu18uY53ms6zrWdR3Lsoz9/jAulz9jmqZxOBzHuq5jv9+PMcZ4Pp9jXddxv9/Gx8ePcb1exn5/GOu6jjHG2O/343q9jDHGOB5P436/j3mex7Is+ZnP53Ns2zaWZRnLEs9wPn8Mf57PZ37+7XbNv9/vD2Oe5/H79z/jdDqP2+06DofjmOd5XC5/8j3i+3avz3qM0+k8fv/+Z5zPH/m80zSNaZrGuq7jdruObdvG6XQe9/tt7PeH8Xjccz3meRnr+hyPx2PsdrvxeDxe7xzvcTgcx/P5HI/Hfex2+7Hf78efP19jjDHO54+xruuYpmncbtdcp/P5Y/z58zVOp3O+/58/X2O324/n8zHGGGNd13E8nsa2bfm/2+2azz7P8zgcjmOMMaZpGl9fn7kuz+ez/W585zwvr/eZx/1+H9u2jd1uN+7321iW3ViWZVyvl7FtWz6P9dzt9rneu91ufH7+Hj9//jVut9vY7/fj+XyOMca432/jfP4Yn5+/c78ulz/j58+/xhhjfH7+HrvdbmzbNqZpeq31Y9zvt/Hjx88xxhjbto3n8/l6ztuYpnnsdrtc0+PxNG63a+63tbjf72NZlnE4HMf9fhvH42k8Ho+xrs/xfD7H+fwxHo/HuN2u4+Pjx/j8/D3meR7zPOf3Hg7H8efP1/jx4+d4PB5jWZZxv9/G8/lMez8cjmPbtnzfeV7yM/78+Rrn80falvUbY4xlWXJvpml6rf8+3/1y+fM6a4ex2+3G7XYdx+NpXC5/cn23bRs/f/6Vz2Gduo3EexxyvdicP6fTOW3Is/i5ZVlyjXa73ZimaRyPp9w3...
+2023-09-29 17:12:06:316 [HTTP] <-- GET /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8/screenshot 200 2671 ms - 5351512
+2023-09-29 17:12:06:316 [HTTP] 
+2023-09-29 17:12:06:646 [HTTP] --> DELETE /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8
+2023-09-29 17:12:06:646 [HTTP] {}
+2023-09-29 17:12:06:646 [AndroidUiautomator2Driver@11e1 (658d456f)] Calling AppiumDriver.deleteSession() with args: ["658d456f-f9b8-40d8-a4be-9c90fa92daf8"]
+2023-09-29 17:12:06:647 [AppiumDriver@79f3] Event 'quitSessionRequested' logged at 1695982326647 (17:12:06 GMT+0700 (Western Indonesia Time))
+2023-09-29 17:12:06:648 [AppiumDriver@79f3] Removing session 658d456f-f9b8-40d8-a4be-9c90fa92daf8 from our master session list
+2023-09-29 17:12:06:649 [AndroidUiautomator2Driver@11e1 (658d456f)] Deleting UiAutomator2 session
+2023-09-29 17:12:06:650 [AndroidUiautomator2Driver@11e1 (658d456f)] Deleting UiAutomator2 server session
+2023-09-29 17:12:06:651 [AndroidUiautomator2Driver@11e1 (658d456f)] Matched '/' to command name 'deleteSession'
+2023-09-29 17:12:06:651 [AndroidUiautomator2Driver@11e1 (658d456f)] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/0b3b5532-ae1a-439a-ac89-d096e473b1a6] with no body
+2023-09-29 17:12:06:667 [AndroidUiautomator2Driver@11e1 (658d456f)] Got response with status 200: {"sessionId":"0b3b5532-ae1a-439a-ac89-d096e473b1a6","value":null}
+2023-09-29 17:12:06:669 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2023-09-29 17:12:06:767 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell am force-stop flipboard.app'
+2023-09-29 17:12:06:997 [Logcat] Stopping logcat capture
+2023-09-29 17:12:07:004 [ADB] Removing forwarded port socket connection: 8200 
+2023-09-29 17:12:07:004 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU forward --remove tcp:8200'
+2023-09-29 17:12:07:123 [AndroidUiautomator2Driver@11e1 (658d456f)] Restoring hidden api policy to the device default configuration
+2023-09-29 17:12:07:123 [ADB] Running 'C:\Users\1556\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s SK5DMBEUOBU4LNAU shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2023-09-29 17:12:07:309 [Instrumentation] .
+2023-09-29 17:12:07:329 [Instrumentation] Time: 28.029
+2023-09-29 17:12:07:330 [Instrumentation] 
+2023-09-29 17:12:07:331 [Instrumentation] OK (1 test)
+2023-09-29 17:12:07:351 [Instrumentation] The process has exited with code 0
+2023-09-29 17:12:07:387 [AppiumDriver@79f3] Event 'quitSessionFinished' logged at 1695982327386 (17:12:07 GMT+0700 (Western Indonesia Time))
+2023-09-29 17:12:07:387 [AppiumDriver@79f3] Received response: null
+2023-09-29 17:12:07:387 [AppiumDriver@79f3] But deleting session, so not returning
+2023-09-29 17:12:07:387 [AppiumDriver@79f3] Responding to client with driver.deleteSession() result: null
+2023-09-29 17:12:07:388 [HTTP] <-- DELETE /session/658d456f-f9b8-40d8-a4be-9c90fa92daf8 200 742 ms - 14
+2023-09-29 17:12:07:388 [HTTP] 
